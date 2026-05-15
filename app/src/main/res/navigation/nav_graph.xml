@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeDashboardFragment">
+
+    <fragment
+        android:id="@+id/homeDashboardFragment"
+        android:name="com.example.nammasantheledger.ui.fragment.HomeDashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment
+        android:id="@+id/customerListFragment"
+        android:name="com.example.nammasantheledger.ui.fragment.CustomerListFragment"
+        android:label="Customers" />
+
+    <fragment
+        android:id="@+id/addEditCustomerFragment"
+        android:name="com.example.nammasantheledger.ui.fragment.AddEditCustomerFragment"
+        android:label="Add Customer" />
+
+    <fragment
+        android:id="@+id/quickCreditFragment"
+        android:name="com.example.nammasantheledger.ui.fragment.QuickEntryFragment"
+        android:label="Quick Credit">
+        <argument android:name="type" app:argType="string" android:defaultValue="CREDIT" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.nammasantheledger.ui.fragment.QuickEntryFragment"
+        android:label="Payment Entry">
+        <argument android:name="type" app:argType="string" android:defaultValue="PAYMENT" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/customerLedgerFragment"
+        android:name="com.example.nammasantheledger.ui.fragment.CustomerLedgerFragment"
+        android:label="Customer Ledger">
+        <argument android:name="customerId" app:argType="long" />
+        <argument android:name="customerName" app:argType="string" />
+        <argument android:name="phone" app:argType="string" android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dailySummaryFragment"
+        android:name="com.example.nammasantheledger.ui.fragment.DailySummaryFragment"
+        android:label="Daily Summary" />
+
+    <fragment
+        android:id="@+id/settingsAboutFragment"
+        android:name="com.example.nammasantheledger.ui.fragment.SettingsAboutFragment"
+        android:label="About" />
+</navigation>

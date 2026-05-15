@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/neutral_bg"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/daily_summary_title" android:textSize="24sp" android:textStyle="bold" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:cardCornerRadius="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Sales Today" />
+                <TextView android:id="@+id/tvSalesValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/sales_blue" android:textSize="20sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Total Credit Given" />
+                <TextView android:id="@+id/tvCreditValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/credit_red" android:textSize="20sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Payments Received" />
+                <TextView android:id="@+id/tvPaymentsValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/payment_green" android:textSize="20sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/total_outstanding" />
+                <TextView android:id="@+id/tvOutstandingValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/credit_red" android:textSize="20sp" />
+                <TextView android:id="@+id/tvAdvanceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/advance_balance" android:textColor="@color/payment_green" android:visibility="gone" />
+                <TextView android:id="@+id/tvAdvanceValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/payment_green" android:textSize="18sp" android:visibility="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/green_light"
+            app:cardCornerRadius="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Net Profit Estimate" />
+                <TextView android:id="@+id/tvProfitEstimateValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/green_dark" android:textSize="22sp" android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

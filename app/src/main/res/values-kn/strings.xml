@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ನಮ್ಮ ಸಂತೇ ಲೆಡ್ಜರ್</string>
+    <string name="search_customer">ಗ್ರಾಹಕರನ್ನು ಹುಡುಕಿ</string>
+    <string name="add_customer">ಗ್ರಾಹಕರನ್ನು ಸೇರಿಸಿ</string>
+    <string name="save">ಉಳಿಸಿ</string>
+    <string name="send_reminder">ಜ್ಞಾಪನೆ ಕಳುಹಿಸಿ</string>
+</resources>
